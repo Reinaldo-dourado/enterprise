@@ -15,16 +15,16 @@ import cronapi.swagger.CronappSwagger;
 import cronapp.framework.core.persistence.*;
 
 /**
-* Classe que representa a tabela APPLICATION_USER
+* Classe que representa a tabela TipoMetrica
 * @generated
 */
 @jakarta.persistence.Entity
-@jakarta.persistence.Table(name = "\"APPLICATION_USER\"")
+@jakarta.persistence.Table(name = "\"TipoMetrica\"")
 @XmlRootElement
-@CronappSecurity(post = "Administrators", get = "Administrators", delete = "Administrators", put = "Administrators")
-@JsonFilter("app.entity.ApplicationUser")
-@CronappTable(role=CronappTableRole.ASSOCIATION_CLASS)
-public class ApplicationUser implements Serializable {
+@CronappSecurity
+@JsonFilter("app.entity.TipoMetrica")
+@CronappTable(role=CronappTableRole.CLASS)
+public class TipoMetrica implements Serializable {
     /**
     * UID da classe, necessário na serialização
     * @generated
@@ -35,7 +35,7 @@ public class ApplicationUser implements Serializable {
     * @generated
     */
     @Id
-    @CronappColumn(attributeType="STRING", label="Id")
+    @CronappColumn(attributeType="STRING", label="Id", defaultValue = "UUID.randomUUID().toString().toUpperCase()")
     @Column(name = "id", nullable = false, insertable=true, updatable=true)
         private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
 
@@ -43,26 +43,17 @@ public class ApplicationUser implements Serializable {
     /**
     * @generated
     */
-    @ManyToOne
-    @JoinColumn(name="application_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+    @CronappColumn(attributeType="STRING", label="Descricao")
+    @Column(name = "descricao", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private Application application;
-
-
-    /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="user_id", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = "APPLICATION_USER_USER_ID_USER_ID", foreignKeyDefinition = "FOREIGN KEY (user_id) REFERENCES USER (id) ON DELETE CASCADE"))
-        
-        private User user;
+        private java.lang.String descricao;
 
 
     /**
     * Construtor
     * @generated
     */
-    public ApplicationUser(){
+    public TipoMetrica(){
     }
 
     /**
@@ -79,44 +70,26 @@ public class ApplicationUser implements Serializable {
     * @param id id
     * @generated
     */
-    public ApplicationUser setId(java.lang.String id) {
+    public TipoMetrica setId(java.lang.String id) {
         this.id = id;
         return this;
     }
     /**
-    * Obtém application
-    * return application
+    * Obtém descricao
+    * return descricao
     * @generated
     */
-    public Application getApplication() {
-        return this.application;
+    public java.lang.String getDescricao() {
+        return this.descricao;
     }
 
     /**
-    * Define application
-    * @param application application
+    * Define descricao
+    * @param descricao descricao
     * @generated
     */
-    public ApplicationUser setApplication(Application application) {
-        this.application = application;
-        return this;
-    }
-    /**
-    * Obtém user
-    * return user
-    * @generated
-    */
-    public User getUser() {
-        return this.user;
-    }
-
-    /**
-    * Define user
-    * @param user user
-    * @generated
-    */
-    public ApplicationUser setUser(User user) {
-        this.user = user;
+    public TipoMetrica setDescricao(java.lang.String descricao) {
+        this.descricao = descricao;
         return this;
     }
 
@@ -127,7 +100,7 @@ public class ApplicationUser implements Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-ApplicationUser object = (ApplicationUser)obj;
+TipoMetrica object = (TipoMetrica)obj;
         if (id != null ? !id.equals(object.id) : object.id != null) return false;
         return true;
     }
