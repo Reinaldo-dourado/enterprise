@@ -1,0 +1,205 @@
+{
+  "customId": "query474727",
+  "queryName": "ContratoProjeto",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Projetos",
+  "entityFullName": "app.entity.Projetos",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Projetos",
+        "namespace": "app.entity.Projetos",
+        "dataSourceOptions": {
+          "id": "app.Projetos",
+          "customId": "Projetos",
+          "customQueryName": "app.Projetos",
+          "paramValues": [],
+          "entityFullName": "app.entity.Projetos",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicio",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFim",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "contrato",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "contratoItens",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "contrato_descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "contratoItens_descricaoItem",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Projetos",
+          "fullName": "app.entity.Projetos",
+          "labelName": "app.entity.Projetos (Projetos)"
+        },
+        "alias": "p"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "p.contrato.id",
+          "field": "p.contrato.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":contratoId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "contratoId",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "name": null,
+    "dataInicio": null,
+    "dataFim": null,
+    "contrato": null,
+    "contratoItens": null,
+    "contrato_descricao": null,
+    "contratoItens_descricaoItem": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "name": null,
+    "dataInicio": null,
+    "dataFim": null,
+    "contrato": null,
+    "contratoItens": null,
+    "contrato_descricao": null,
+    "contratoItens_descricaoItem": null
+  },
+  "security": {
+    "id": null,
+    "name": null,
+    "dataInicio": null,
+    "dataFim": null,
+    "contrato": null,
+    "contratoItens": null,
+    "contrato_descricao": null,
+    "contratoItens_descricaoItem": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query474727/",
+  "audit": false,
+  "swagger": false
+}

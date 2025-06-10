@@ -115,10 +115,10 @@ public class ContratoItens implements Serializable {
     /**
     * @generated
     */
-    @CronappColumn(attributeType="STRING", label="Unidade Contratada Item")
-    @Column(name = "unidadeContratadaItem", nullable = true, unique = false, insertable=true, updatable=true)
+    @CronappColumn(attributeType="INTEGER", label="Quantidade Contratada Item")
+    @Column(name = "QuantidadeContratadaItem", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private java.lang.String unidadeContratadaItem;
+        private java.lang.Integer quantidadeContratadaItem;
 
 
     /**
@@ -327,21 +327,21 @@ public class ContratoItens implements Serializable {
         return this;
     }
     /**
-    * Obtém unidadeContratadaItem
-    * return unidadeContratadaItem
+    * Obtém quantidadeContratadaItem
+    * return quantidadeContratadaItem
     * @generated
     */
-    public java.lang.String getUnidadeContratadaItem() {
-        return this.unidadeContratadaItem;
+    public java.lang.Integer getQuantidadeContratadaItem() {
+        return this.quantidadeContratadaItem;
     }
 
     /**
-    * Define unidadeContratadaItem
-    * @param unidadeContratadaItem unidadeContratadaItem
+    * Define quantidadeContratadaItem
+    * @param quantidadeContratadaItem quantidadeContratadaItem
     * @generated
     */
-    public ContratoItens setUnidadeContratadaItem(java.lang.String unidadeContratadaItem) {
-        this.unidadeContratadaItem = unidadeContratadaItem;
+    public ContratoItens setQuantidadeContratadaItem(java.lang.Integer quantidadeContratadaItem) {
+        this.quantidadeContratadaItem = quantidadeContratadaItem;
         return this;
     }
     /**

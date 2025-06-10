@@ -1,0 +1,214 @@
+{
+  "customId": "query630108",
+  "queryName": "ContratosGet",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Contrato",
+  "entityFullName": "app.entity.Contrato",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Contrato",
+        "namespace": "app.entity.Contrato",
+        "dataSourceOptions": {
+          "id": "app.Contrato",
+          "customId": "Contrato",
+          "customQueryName": "app.Contrato",
+          "paramValues": [],
+          "entityFullName": "app.entity.Contrato",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "numero",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorGlobal",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicio",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFim",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "cliente",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "cliente_nomeFantasia",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Contrato",
+          "fullName": "app.entity.Contrato",
+          "labelName": "app.entity.Contrato (Contrato)"
+        },
+        "alias": "c",
+        "name": "Contrato"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "c",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "c.cliente.id",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "c.id",
+          "field": "c.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":id",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "id",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "numero": null,
+    "descricao": null,
+    "valorGlobal": null,
+    "dataInicio": null,
+    "dataFim": null,
+    "cliente": null,
+    "cliente_nomeFantasia": null,
+    "cliente_id": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "numero": null,
+    "descricao": null,
+    "valorGlobal": null,
+    "dataInicio": null,
+    "dataFim": null,
+    "cliente": null,
+    "cliente_nomeFantasia": null,
+    "cliente_id": null
+  },
+  "security": {
+    "id": null,
+    "numero": null,
+    "descricao": null,
+    "valorGlobal": null,
+    "dataInicio": null,
+    "dataFim": null,
+    "cliente": null,
+    "cliente_nomeFantasia": null,
+    "cliente_id": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query630108/",
+  "audit": false,
+  "swagger": false
+}

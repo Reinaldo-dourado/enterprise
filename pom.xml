@@ -3,7 +3,7 @@
     <parent>
         <artifactId>cronapp-framework-spring</artifactId>
         <groupId>io.cronapp</groupId>
-        <version>4.0.3</version>
+        <version>4.0.4</version>
         <relativePath></relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -16,15 +16,6 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**</include>
-                </includes>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
                 <directory>src/test/java</directory>
                 <includes>
                     <include>**</include>
@@ -35,6 +26,15 @@
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
+                <includes>
+                    <include>**</include>
+                </includes>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
                 <includes>
                     <include>**</include>
                 </includes>
@@ -158,7 +158,6 @@
         <project.cronospass.resource mimetype="folder/src">src/main/resources</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/web">src/main/webapp</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/regular">src/test</project.cronospass.resource>
-        <project.cronospass.resource mimetype="folder/regular">src/test/java</project.cronospass.resource>
         <project.cronospass.resource mimetype="folder/src">src/test/java</project.cronospass.resource>
     </properties>
 </project>

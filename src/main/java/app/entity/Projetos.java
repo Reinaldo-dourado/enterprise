@@ -79,6 +79,15 @@ public class Projetos implements Serializable {
 
 
     /**
+    * @generated
+    */
+    @OneToOne
+    @JoinColumn(name="fk_contratoItens", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private ContratoItens contratoItens;
+
+
+    /**
     * Construtor
     * @generated
     */
@@ -173,6 +182,24 @@ public class Projetos implements Serializable {
     */
     public Projetos setContrato(Contrato contrato) {
         this.contrato = contrato;
+        return this;
+    }
+    /**
+    * Obtém contratoItens
+    * return contratoItens
+    * @generated
+    */
+    public ContratoItens getContratoItens() {
+        return this.contratoItens;
+    }
+
+    /**
+    * Define contratoItens
+    * @param contratoItens contratoItens
+    * @generated
+    */
+    public Projetos setContratoItens(ContratoItens contratoItens) {
+        this.contratoItens = contratoItens;
         return this;
     }
 

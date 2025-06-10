@@ -1,0 +1,285 @@
+{
+  "customId": "query494213",
+  "queryName": "ItensContrato",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ContratoItens",
+  "entityFullName": "app.entity.ContratoItens",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "ContratoItens",
+        "namespace": "app.entity.ContratoItens",
+        "dataSourceOptions": {
+          "id": "app.ContratoItens",
+          "customId": "ContratoItens",
+          "customQueryName": "app.ContratoItens",
+          "paramValues": [],
+          "entityFullName": "app.entity.ContratoItens",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "descricaoItem",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorItem",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "perc_ComissaoParceiro",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "comissaoParceiro",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorFixoTayta",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorVariavelTayta",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorUnitarioTayta",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "conversaoMetrica",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "unidadeContratadaItem",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorTotalItem",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valorTotalItemTayta",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "contrato",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "tipoMetrica",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "contrato_descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "tipoMetrica_descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "ContratoItens",
+          "fullName": "app.entity.ContratoItens",
+          "labelName": "app.entity.ContratoItens (ContratoItens)"
+        },
+        "alias": "c"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "c",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "c.contrato.id",
+          "field": "c.contrato.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":contratoId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "contratoId",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "descricaoItem": null,
+    "valorItem": null,
+    "perc_ComissaoParceiro": null,
+    "comissaoParceiro": null,
+    "valorFixoTayta": null,
+    "valorVariavelTayta": null,
+    "valorUnitarioTayta": null,
+    "conversaoMetrica": null,
+    "quantidadeContratadaItem": null,
+    "valorTotalItem": null,
+    "valorTotalItemTayta": null,
+    "contrato": null,
+    "tipoMetrica": null,
+    "contrato_descricao": null,
+    "tipoMetrica_descricao": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "descricaoItem": null,
+    "valorItem": null,
+    "perc_ComissaoParceiro": null,
+    "comissaoParceiro": null,
+    "valorFixoTayta": null,
+    "valorVariavelTayta": null,
+    "valorUnitarioTayta": null,
+    "conversaoMetrica": null,
+    "quantidadeContratadaItem": null,
+    "valorTotalItem": null,
+    "valorTotalItemTayta": null,
+    "contrato": null,
+    "tipoMetrica": null,
+    "contrato_descricao": null,
+    "tipoMetrica_descricao": null
+  },
+  "security": {
+    "id": null,
+    "descricaoItem": null,
+    "valorItem": null,
+    "perc_ComissaoParceiro": null,
+    "comissaoParceiro": null,
+    "valorFixoTayta": null,
+    "valorVariavelTayta": null,
+    "valorUnitarioTayta": null,
+    "conversaoMetrica": null,
+    "quantidadeContratadaItem": null,
+    "valorTotalItem": null,
+    "valorTotalItemTayta": null,
+    "contrato": null,
+    "tipoMetrica": null,
+    "contrato_descricao": null,
+    "tipoMetrica_descricao": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query494213/",
+  "audit": false,
+  "swagger": false
+}

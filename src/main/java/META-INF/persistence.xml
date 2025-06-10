@@ -9,8 +9,9 @@
         <class>app.entity.ApplicationUser</class>
         <class>app.entity.TimeSheetOS</class>
         <class>app.entity.User</class>
-        <class>app.entity.AuditLog</class>
+        <class>app.entity.ProjetosContratoItens</class>
         <class>app.entity.AlocacaoOrdemServico</class>
+        <class>app.entity.AuditLog</class>
         <class>app.entity.Login</class>
         <class>app.entity.View</class>
         <class>app.entity.Contrato</class>
