@@ -107,7 +107,13 @@
     "rulesJoin": [],
     "rulesGroupBy": [],
     "rulesHaving": [],
-    "rulesOrderBy": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "c.dataFim",
+        "order": "desc"
+      }
+    ],
     "rules": {
       "condition": "OR",
       "rules": [

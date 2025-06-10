@@ -79,6 +79,34 @@ public class AlocacaoOrdemServico implements Serializable {
 
 
     /**
+    * @generated
+    */
+    @CronappColumn(attributeType="INTEGER", label="Quantidade Prevista")
+    @Column(name = "quantidadePrevista", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.Integer quantidadePrevista;
+
+
+    /**
+    * @generated
+    */
+    @CronappColumn(attributeType="INTEGER", label="Quantidade Em Dias Uteis Prazo")
+    @Column(name = "quantidadeEmDiasUteisPrazo", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.Integer quantidadeEmDiasUteisPrazo;
+
+
+    /**
+    * @generated
+    */
+    @Temporal(TemporalType.DATE)
+    @CronappColumn(attributeType="DATE", label="Data Prevista")
+    @Column(name = "dataPrevistaEntrega", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.util.Date dataPrevistaEntrega;
+
+
+    /**
     * Construtor
     * @generated
     */
@@ -173,6 +201,60 @@ public class AlocacaoOrdemServico implements Serializable {
     */
     public AlocacaoOrdemServico setUser(User user) {
         this.user = user;
+        return this;
+    }
+    /**
+    * Obtém quantidadePrevista
+    * return quantidadePrevista
+    * @generated
+    */
+    public java.lang.Integer getQuantidadePrevista() {
+        return this.quantidadePrevista;
+    }
+
+    /**
+    * Define quantidadePrevista
+    * @param quantidadePrevista quantidadePrevista
+    * @generated
+    */
+    public AlocacaoOrdemServico setQuantidadePrevista(java.lang.Integer quantidadePrevista) {
+        this.quantidadePrevista = quantidadePrevista;
+        return this;
+    }
+    /**
+    * Obtém quantidadeEmDiasUteisPrazo
+    * return quantidadeEmDiasUteisPrazo
+    * @generated
+    */
+    public java.lang.Integer getQuantidadeEmDiasUteisPrazo() {
+        return this.quantidadeEmDiasUteisPrazo;
+    }
+
+    /**
+    * Define quantidadeEmDiasUteisPrazo
+    * @param quantidadeEmDiasUteisPrazo quantidadeEmDiasUteisPrazo
+    * @generated
+    */
+    public AlocacaoOrdemServico setQuantidadeEmDiasUteisPrazo(java.lang.Integer quantidadeEmDiasUteisPrazo) {
+        this.quantidadeEmDiasUteisPrazo = quantidadeEmDiasUteisPrazo;
+        return this;
+    }
+    /**
+    * Obtém dataPrevistaEntrega
+    * return dataPrevistaEntrega
+    * @generated
+    */
+    public java.util.Date getDataPrevistaEntrega() {
+        return this.dataPrevistaEntrega;
+    }
+
+    /**
+    * Define dataPrevistaEntrega
+    * @param dataPrevistaEntrega dataPrevistaEntrega
+    * @generated
+    */
+    public AlocacaoOrdemServico setDataPrevistaEntrega(java.util.Date dataPrevistaEntrega) {
+        this.dataPrevistaEntrega = dataPrevistaEntrega;
         return this;
     }
 

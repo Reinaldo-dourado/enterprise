@@ -193,6 +193,51 @@ public class User implements Serializable {
 
 
     /**
+    * @generated
+    */
+    @CronappColumn(attributeType="STRING", label="CPF", mask="999.999.999-99;0")
+    @Column(name = "CPF", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String cpF;
+
+
+    /**
+    * @generated
+    */
+    @OneToOne
+    @JoinColumn(name="fk_areaAtuacao", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private AreaAtuacao areaAtuacao;
+
+
+    /**
+    * @generated
+    */
+    @OneToOne
+    @JoinColumn(name="fk_areaAtuacaoDelivery", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private AreaAtuacaoDelivery areaAtuacaoDelivery;
+
+
+    /**
+    * @generated
+    */
+    @OneToOne
+    @JoinColumn(name="fk_empresaUsuario", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private EmpresaUsuario empresaUsuario;
+
+
+    /**
+    * @generated
+    */
+    @OneToOne
+    @JoinColumn(name="fk_userDetail", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private UserDetail userDetail;
+
+
+    /**
     * Construtor
     * @generated
     */
@@ -503,6 +548,96 @@ public class User implements Serializable {
     */
     public User setPicture(byte[] picture) {
         this.picture = picture;
+        return this;
+    }
+    /**
+    * Obtém cpF
+    * return cpF
+    * @generated
+    */
+    public java.lang.String getCpF() {
+        return this.cpF;
+    }
+
+    /**
+    * Define cpF
+    * @param cpF cpF
+    * @generated
+    */
+    public User setCpF(java.lang.String cpF) {
+        this.cpF = cpF;
+        return this;
+    }
+    /**
+    * Obtém areaAtuacao
+    * return areaAtuacao
+    * @generated
+    */
+    public AreaAtuacao getAreaAtuacao() {
+        return this.areaAtuacao;
+    }
+
+    /**
+    * Define areaAtuacao
+    * @param areaAtuacao areaAtuacao
+    * @generated
+    */
+    public User setAreaAtuacao(AreaAtuacao areaAtuacao) {
+        this.areaAtuacao = areaAtuacao;
+        return this;
+    }
+    /**
+    * Obtém areaAtuacaoDelivery
+    * return areaAtuacaoDelivery
+    * @generated
+    */
+    public AreaAtuacaoDelivery getAreaAtuacaoDelivery() {
+        return this.areaAtuacaoDelivery;
+    }
+
+    /**
+    * Define areaAtuacaoDelivery
+    * @param areaAtuacaoDelivery areaAtuacaoDelivery
+    * @generated
+    */
+    public User setAreaAtuacaoDelivery(AreaAtuacaoDelivery areaAtuacaoDelivery) {
+        this.areaAtuacaoDelivery = areaAtuacaoDelivery;
+        return this;
+    }
+    /**
+    * Obtém empresaUsuario
+    * return empresaUsuario
+    * @generated
+    */
+    public EmpresaUsuario getEmpresaUsuario() {
+        return this.empresaUsuario;
+    }
+
+    /**
+    * Define empresaUsuario
+    * @param empresaUsuario empresaUsuario
+    * @generated
+    */
+    public User setEmpresaUsuario(EmpresaUsuario empresaUsuario) {
+        this.empresaUsuario = empresaUsuario;
+        return this;
+    }
+    /**
+    * Obtém userDetail
+    * return userDetail
+    * @generated
+    */
+    public UserDetail getUserDetail() {
+        return this.userDetail;
+    }
+
+    /**
+    * Define userDetail
+    * @param userDetail userDetail
+    * @generated
+    */
+    public User setUserDetail(UserDetail userDetail) {
+        this.userDetail = userDetail;
         return this;
     }
 

@@ -52,8 +52,8 @@ public class OrdemDeServicos implements Serializable {
     /**
     * @generated
     */
-    @Temporal(TemporalType.TIMESTAMP)
-    @CronappColumn(attributeType="DATETIME", label="Data Inicial")
+    @Temporal(TemporalType.DATE)
+    @CronappColumn(attributeType="DATE", label="Data Inicial")
     @Column(name = "dataInicial", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.util.Date dataInicial;
@@ -62,8 +62,8 @@ public class OrdemDeServicos implements Serializable {
     /**
     * @generated
     */
-    @Temporal(TemporalType.TIMESTAMP)
-    @CronappColumn(attributeType="DATETIME", label="Data Final")
+    @Temporal(TemporalType.DATE)
+    @CronappColumn(attributeType="DATE", label="Data Final")
     @Column(name = "dataFinal", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.util.Date dataFinal;
@@ -76,6 +76,15 @@ public class OrdemDeServicos implements Serializable {
     @JoinColumn(name="fk_projetos", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
         
         private Projetos projetos;
+
+
+    /**
+    * @generated
+    */
+    @CronappColumn(attributeType="INTEGER", label="Quantidade")
+    @Column(name = "Quantidade", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.Integer quantidade;
 
 
     /**
@@ -173,6 +182,24 @@ public class OrdemDeServicos implements Serializable {
     */
     public OrdemDeServicos setProjetos(Projetos projetos) {
         this.projetos = projetos;
+        return this;
+    }
+    /**
+    * Obtém quantidade
+    * return quantidade
+    * @generated
+    */
+    public java.lang.Integer getQuantidade() {
+        return this.quantidade;
+    }
+
+    /**
+    * Define quantidade
+    * @param quantidade quantidade
+    * @generated
+    */
+    public OrdemDeServicos setQuantidade(java.lang.Integer quantidade) {
+        this.quantidade = quantidade;
         return this;
     }
 
