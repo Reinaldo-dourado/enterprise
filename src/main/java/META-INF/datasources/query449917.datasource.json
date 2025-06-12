@@ -1,0 +1,89 @@
+{
+  "customId": "query449917",
+  "queryName": "GetCliente",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Cliente",
+  "entityFullName": "app.entity.Cliente",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Cliente",
+        "alias": "c",
+        "namespace": "app.entity.Cliente"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "c"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "cnpj": null,
+    "razaoSocial": null,
+    "nomeFantasia": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "cnpj": null,
+    "razaoSocial": null,
+    "nomeFantasia": null
+  },
+  "security": {
+    "id": null,
+    "cnpj": null,
+    "razaoSocial": null,
+    "nomeFantasia": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query449917/",
+  "audit": false,
+  "swagger": false
+}
