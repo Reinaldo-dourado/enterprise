@@ -9,7 +9,6 @@
         <class>app.entity.User</class>
         <class>app.entity.AlocacaoOrdemServico</class>
         <class>app.entity.AuditLog</class>
-        <class>app.entity.AreaAtuacaoDelivery</class>
         <class>app.entity.RoleSecurable</class>
         <class>app.entity.EmpresaUsuario</class>
         <class>app.entity.UserSecurable</class>

@@ -1,75 +1,200 @@
-<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="JAVA" bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="UserManager" ruleName="UserManager" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false" swagger="false">
-  <metadata scale="1" scrollx="410.2000000000005" scrolly="-140.99999999999994" target="qdX-:fq)!hkn^]:o*{_@"/>
-  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-300" y="194">
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="JAVA" bpmnAble="false" formTarget="src/main/webapp/views/logged/timesheetos.view.html" functionCategory="" linkHelp="" multilayer="false" resourceType="JAVA" ruleDescription="UserManager" ruleName="UserManager" ruleSynchronous="false" ruleTimeout="300" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="404.4999999999999" scrolly="-184.99999999999983" target="/$e0GLf-::A/:$|ZIj_|"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-300" y="194">
     <mutation>
       <arg id="5df10557" name="Entidade&amp;lt;app.entity.User&amp;gt;"/>
     </mutation>
     <field customattributes="" name="NAME">BeforeInsert</field>
     <comment h="80" pinned="false" w="160">UserManager</comment>
     <value name="RETURN">
-      <block asynccall="false" colour="#913487" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="um^^@rxc#~#HiIG+yMrG" multilayer="false" namespace="cronapi.authentication.Operations.beforeInsert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Inserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20executado%20antes%20de%20inserir%20um%20registro%20na%20entidade%20Role%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeInsert%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+      <block asynccall="false" colour="#913487" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="um^^@rxc#~#HiIG+yMrG" multilayer="false" namespace="cronapi.authentication.Operations.beforeInsert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Inserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20executado%20antes%20de%20inserir%20um%20registro%20na%20entidade%20Role%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeInsert%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
         <mutation name="{{cronapi.authentication.Operations.beforeInsert}}" return-raw-type="cronapi.Var">
           <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
         </mutation>
         <value name="ARG0">
-          <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="]c3[B)U%$qF#UBJasA.M" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="]c3[B)U%$qF#UBJasA.M" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
             <field customattributes="" name="VAR">Entidade&lt;app.entity.User&gt;</field>
           </block>
         </value>
       </block>
     </value>
   </block>
-  <block asynccall="false" colour="#995ba5" id="lgDJE2Nvg8upiom!/?2j" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-298" y="214">
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="lgDJE2Nvg8upiom!/?2j" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-298" y="214">
     <mutation>
       <arg id="8537bddc" name="Entidade&amp;lt;app.entity.User&amp;gt;"/>
     </mutation>
     <field customattributes="" name="NAME">BeforeUpdate</field>
     <comment h="80" pinned="false" w="160">UserManager</comment>
     <value name="RETURN">
-      <block asynccall="false" colour="#913487" dependencyby="lgDJE2Nvg8upiom!/?2j" id="a`{d/BCt2]W,bu=@R5?3" multilayer="false" namespace="cronapi.authentication.Operations.beforeUpdate" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Atualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20executado%20antes%20de%20atualizar%20um%20registro%20na%20entidade%20Role%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeUpdate%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+      <block asynccall="false" colour="#913487" datasourcetype="" dependencyby="lgDJE2Nvg8upiom!/?2j" id="a`{d/BCt2]W,bu=@R5?3" multilayer="false" namespace="cronapi.authentication.Operations.beforeUpdate" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Atualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20executado%20antes%20de%20atualizar%20um%20registro%20na%20entidade%20Role%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeUpdate%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
         <mutation name="{{cronapi.authentication.Operations.beforeUpdate}}" return-raw-type="cronapi.Var">
           <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
         </mutation>
         <value name="ARG0">
-          <block asynccall="false" colour="#0088ee" dependencyby="lgDJE2Nvg8upiom!/?2j" id="q!,R)G0oV{GzT`jgHs4@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="lgDJE2Nvg8upiom!/?2j" id="q!,R)G0oV{GzT`jgHs4@" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
             <field customattributes="" name="VAR">Entidade&lt;app.entity.User&gt;</field>
           </block>
         </value>
       </block>
     </value>
   </block>
-  <block asynccall="false" colour="#995ba5" id="qdX-:fq)!hkn^]:o*{_@" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-280" y="214">
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="qdX-:fq)!hkn^]:o*{_@" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-280" y="214">
     <mutation>
       <arg id="6d0d416f" name="Entidade&amp;lt;app.entity.User&amp;gt;"/>
     </mutation>
     <field customattributes="" name="NAME">BeforeDelete</field>
     <comment h="80" pinned="false" w="160">UserManager</comment>
     <value name="RETURN">
-      <block asynccall="false" colour="#913487" dependencyby="qdX-:fq)!hkn^]:o*{_@" id="~L5wQ855KJWzsQSInx,R" multilayer="false" namespace="cronapi.authentication.Operations.beforeDelete" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Deletar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20executado%20antes%20de%20deletar%20um%20registro%20nas%20entidades%20Role%20e%20User%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeDelete%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+      <block asynccall="false" colour="#913487" datasourcetype="" dependencyby="qdX-:fq)!hkn^]:o*{_@" id="~L5wQ855KJWzsQSInx,R" multilayer="false" namespace="cronapi.authentication.Operations.beforeDelete" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAntes%20de%20Deletar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%C3%A3o%20executado%20antes%20de%20deletar%20um%20registro%20nas%20entidades%20Role%20e%20User%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.beforeDelete%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
         <mutation name="{{cronapi.authentication.Operations.beforeDelete}}" return-raw-type="cronapi.Var">
           <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
         </mutation>
         <value name="ARG0">
-          <block asynccall="false" colour="#0088ee" dependencyby="qdX-:fq)!hkn^]:o*{_@" id="ZRs?D#2(S)t[bup9L?9Z" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="qdX-:fq)!hkn^]:o*{_@" id="ZRs?D#2(S)t[bup9L?9Z" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
             <field customattributes="" name="VAR">Entidade&lt;app.entity.User&gt;</field>
           </block>
         </value>
       </block>
     </value>
   </block>
-  <block asynccall="false" colour="#fca03b" id="h7He:+I1?3#.CdforDCA" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-348" y="265">
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="/$e0GLf-::A/:$|ZIj_|" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-262" y="278">
+    <field customattributes="" name="NAME">GetUserNormalized</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="s|%j8E^jgtWUOOBK!q!T" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+        <field customattributes="" name="VAR">NomarlizedUserName</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#aa2f00" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="hKmpb;#BxV7(mt#+O^DV" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.query','cronapi.database.Operations.query')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn" valueconstant="">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22isNativeQuery%22:false,%22namespace%22:%22%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22dataSourceOptions%22:%7B%22id%22:%22app.User%22,%22customId%22:%22User%22,%22customQueryName%22:%22app.User%22,%22paramValues%22:%5B%5D,%22entityFullName%22:%22app.entity.User%22,%22schemaFields%22:%5B%7B%22name%22:%22id%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22accessFailedCount%22,%22type%22:%22Int32%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22email%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22emailConfirmed%22,%22type%22:%22Boolean%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22lockoutEnabled%22,%22type%22:%22Boolean%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22lockoutEnd%22,%22type%22:%22DateTime%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22name%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22normalizedEmail%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22normalizedUserName%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22password%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22phoneNumber%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22phoneNumberConfirmed%22,%22type%22:%22Boolean%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22securityStamp%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22twoFactorEnabled%22,%22type%22:%22Boolean%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22userName%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22theme%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22picture%22,%22type%22:%22Binary%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22cpF%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22areaAtuacao%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22empresaUsuario%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22userDetail%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22_objectKey%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:true%7D,%7B%22name%22:%22areaAtuacao_nomeArea%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22empresaUsuario_nomeFantasial%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22userDetail_formaPagamento%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D%5D,%22type%22:%22entity%22,%22hasError%22:false,%22customName%22:%22User%22,%22fullName%22:%22app.entity.User%22,%22labelName%22:%22app.entity.User%20(User)%22%7D,%22alias%22:%22u%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22u%22,%22type%22:%22string%22%7D%5D,%22rulesJoin%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22u.normalizedUserName%22,%22field%22:%22u.normalizedUserName%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22valueType%22:%22param%22,%22value%22:%22:normalizedUserName%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false,%22isDatasource%22:false%7D,%22filter%22:%22select%20%5Cn%5Ctu%20%5Cnfrom%20%5Cn%5CtUser%20u%20%20%5Cnwhere%20%5Cn%5Ctu.normalizedUserName%20=%20:normalizedUserName%22,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22queryMode%22:%22object%22,%22params%22:%22%5B%5C%22normalizedUserName%5C%22%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="normalizedUserName"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="o|NKNdPw^AU?%cydubSd" multilayer="false" namespace="cronapi.text.Operations.normalize" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ENormalizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3ETransforma%20o%20texto%20permitindo%20uma%20classifica%C3%A7%C3%A3o%20e%20pesquisa%20mais%20f%C3%A1ceis%20do%20texto.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%20n%C3%A3o%20normalizado%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.text.Operations.normalize','cronapi.text.Operations.normalize')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+                <mutation name="{{cronapi.text.Operations.normalize}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Texto não normalizado"/>
+                </mutation>
+                <value name="ARG0">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="NU,?A`ENBw7m+tsg){u-" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                    <field customattributes="" name="TEXT"/>
+                  </shadow>
+                  <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="O)M|[:]{LPi*z`8kM+^j" multilayer="false" namespace="cronapi.util.Operations.getCurrentUserName" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20login%20do%20usu%C3%A1rio%20logado%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20o%20login%20do%20usu%C3%A1rio%20logado.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.Operations.getCurrentUserName','cronapi.util.Operations.getCurrentUserName')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+                    <mutation name="{{cronapi.util.Operations.getCurrentUserName}}" return-raw-type="cronapi.Var"/>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id=".lw5wGD+iURNDPGoMNdX" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+            <field customattributes="" name="VAR">userId</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#aa2f00" datasourcetype="fieldFromQuery" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="I9%L!B.%oc6DOSL4M$e}" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.getField','cronapi.database.Operations.getField')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field" valueconstant="">
+                <mutation name="{{cronapi.database.Operations.getField}}">
+                  <arg name="Fonte de dados"/>
+                  <arg name="Nome do campo"/>
+                </mutation>
+                <value name="PARAM0">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="Qe5UyW-}v*T}zJEyPu2z" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">NomarlizedUserName</field>
+                  </block>
+                </value>
+                <value name="PARAM1">
+                  <block asynccall="false" colour="#db802b" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="i#+fMf}U*{M6!Z)0TMrT" origintype="procedures_get_field_datasource" output="true" score="9007199254740991" type="procedures_get_field_datasource" valueconstant="">
+                    <mutation name="">
+                      <arg label="u" value="this[0]"/>
+                      <arg label="u.id" value="this[0].id"/>
+                      <arg label="u.empresaUsuario.id" value="this[0].empresaUsuario.id"/>
+                      <arg label="u.areaAtuacao.id" value="this[0].areaAtuacao.id"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.id" value="this[0].areaAtuacao.areaAtuacao_0.id"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.areaAtuacao_0.id" value="this[0].areaAtuacao.areaAtuacao_0.areaAtuacao_0.id"/>
+                      <arg label="u.accessFailedCount" value="this[0].accessFailedCount"/>
+                      <arg label="u.areaAtuacao" value="this[0].areaAtuacao"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0" value="this[0].areaAtuacao.areaAtuacao_0"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.areaAtuacao_0" value="this[0].areaAtuacao.areaAtuacao_0.areaAtuacao_0"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.areaAtuacao_0.areaAtuacao_0" value="this[0].areaAtuacao.areaAtuacao_0.areaAtuacao_0.areaAtuacao_0"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.areaAtuacao_0.isparticipaAlocacaoTimeSheet" value="this[0].areaAtuacao.areaAtuacao_0.areaAtuacao_0.isparticipaAlocacaoTimeSheet"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.areaAtuacao_0.nomeArea" value="this[0].areaAtuacao.areaAtuacao_0.areaAtuacao_0.nomeArea"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.isparticipaAlocacaoTimeSheet" value="this[0].areaAtuacao.areaAtuacao_0.isparticipaAlocacaoTimeSheet"/>
+                      <arg label="u.areaAtuacao.areaAtuacao_0.nomeArea" value="this[0].areaAtuacao.areaAtuacao_0.nomeArea"/>
+                      <arg label="u.areaAtuacao.isparticipaAlocacaoTimeSheet" value="this[0].areaAtuacao.isparticipaAlocacaoTimeSheet"/>
+                      <arg label="u.areaAtuacao.nomeArea" value="this[0].areaAtuacao.nomeArea"/>
+                      <arg label="u.cpF" value="this[0].cpF"/>
+                      <arg label="u.email" value="this[0].email"/>
+                      <arg label="u.emailConfirmed" value="this[0].emailConfirmed"/>
+                      <arg label="u.empresaUsuario" value="this[0].empresaUsuario"/>
+                      <arg label="u.empresaUsuario.cnPJ" value="this[0].empresaUsuario.cnPJ"/>
+                      <arg label="u.empresaUsuario.nomeFantasial" value="this[0].empresaUsuario.nomeFantasial"/>
+                      <arg label="u.empresaUsuario.razaoSocial" value="this[0].empresaUsuario.razaoSocial"/>
+                      <arg label="u.lockoutEnabled" value="this[0].lockoutEnabled"/>
+                      <arg label="u.lockoutEnd" value="this[0].lockoutEnd"/>
+                      <arg label="u.name" value="this[0].name"/>
+                      <arg label="u.userDetail.unidadePagamento.id" value="this[0].userDetail.unidadePagamento.id"/>
+                      <arg label="u.userDetail.tipoOcasiaoPagamento.id" value="this[0].userDetail.tipoOcasiaoPagamento.id"/>
+                      <arg label="u.userDetail.id" value="this[0].userDetail.id"/>
+                      <arg label="u.normalizedEmail" value="this[0].normalizedEmail"/>
+                      <arg label="u.normalizedUserName" value="this[0].normalizedUserName"/>
+                      <arg label="u.password" value="this[0].password"/>
+                      <arg label="u.phoneNumber" value="this[0].phoneNumber"/>
+                      <arg label="u.phoneNumberConfirmed" value="this[0].phoneNumberConfirmed"/>
+                      <arg label="u.picture" value="this[0].picture"/>
+                      <arg label="u.securityStamp" value="this[0].securityStamp"/>
+                      <arg label="u.theme" value="this[0].theme"/>
+                      <arg label="u.twoFactorEnabled" value="this[0].twoFactorEnabled"/>
+                      <arg label="u.userDetail" value="this[0].userDetail"/>
+                      <arg label="u.userDetail.abonoAnual" value="this[0].userDetail.abonoAnual"/>
+                      <arg label="u.userDetail.dataCadastro" value="this[0].userDetail.dataCadastro"/>
+                      <arg label="u.userDetail.formaPagamento" value="this[0].userDetail.formaPagamento"/>
+                      <arg label="u.userDetail.tipoOcasiaoPagamento" value="this[0].userDetail.tipoOcasiaoPagamento"/>
+                      <arg label="u.userDetail.tipoOcasiaoPagamento.nome" value="this[0].userDetail.tipoOcasiaoPagamento.nome"/>
+                      <arg label="u.userDetail.unidadePagamento" value="this[0].userDetail.unidadePagamento"/>
+                      <arg label="u.userDetail.unidadePagamento.nome" value="this[0].userDetail.unidadePagamento.nome"/>
+                      <arg label="u.userDetail.valor" value="this[0].userDetail.valor"/>
+                      <arg label="u.userDetail.valorProLabore" value="this[0].userDetail.valorProLabore"/>
+                      <arg label="u.userDetail.valorRessarcimentoTelefone" value="this[0].userDetail.valorRessarcimentoTelefone"/>
+                      <arg label="u.userDetail.valorVariavelDesenvolivmento" value="this[0].userDetail.valorVariavelDesenvolivmento"/>
+                      <arg label="u.userDetail.valorVariavelTreinamento" value="this[0].userDetail.valorVariavelTreinamento"/>
+                      <arg label="u.userName" value="this[0].userName"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">this[0].id</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="1/=zRapyTBeh%fJ=8qAs" origintype="text_print" output="false" score="9007199254740991" tooltip="Imprime o texto, número ou valor especificado." type="text_print" valueconstant="">
+                <value name="TEXT">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="ro!EBJM#JV7!ZjOxZJ^K" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                    <field customattributes="" name="TEXT">abc</field>
+                  </shadow>
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="}+fmphpeD{/CQ^mfj1n=" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">userId</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="/$e0GLf-::A/:$|ZIj_|" id="-7;tV[)Ywgh6/sAY,!;s" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+        <field customattributes="" name="VAR">userId</field>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="h7He:+I1?3#.CdforDCA" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-341" y="298">
     <mutation>
       <arg id="83c51450" name="Entidade&amp;lt;app.entity.User&amp;gt;"/>
     </mutation>
     <field customattributes="" name="NAME">Normalize</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
     <value name="RETURN">
-      <block asynccall="false" colour="#913487" dependencyby="h7He:+I1?3#.CdforDCA" id="l?F0R=Pqgi4m::2x.CAc" multilayer="false" namespace="cronapi.authentication.Operations.normalize" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ENormalizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20para%20normalizar%20o%20campo%20'name'%20da%20entidade%20Fun%EF%BF%BD%EF%BF%BDo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.normalize%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+      <block asynccall="false" colour="#913487" datasourcetype="" dependencyby="h7He:+I1?3#.CdforDCA" id="l?F0R=Pqgi4m::2x.CAc" multilayer="false" namespace="cronapi.authentication.Operations.normalize" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ENormalizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EBloco%20padr%EF%BF%BDo%20para%20normalizar%20o%20campo%20'name'%20da%20entidade%20Fun%EF%BF%BD%EF%BF%BDo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Desconhecido%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22http://localhost:8080/help?type=blockly&amp;amp;id=cronapi.authentication.Operations.normalize%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
         <mutation name="{{cronapi.authentication.Operations.normalize}}" return-raw-type="cronapi.Var">
           <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.UNKNOWN" name="Entidade"/>
         </mutation>
         <value name="ARG0">
-          <block asynccall="false" colour="#0088ee" dependencyby="h7He:+I1?3#.CdforDCA" id="H)~{*.PI:RYf+([9$.-6" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="h7He:+I1?3#.CdforDCA" id="H)~{*.PI:RYf+([9$.-6" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
             <field customattributes="" name="VAR">Entidade&lt;app.entity.User&gt;</field>
           </block>
         </value>

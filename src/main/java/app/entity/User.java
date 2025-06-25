@@ -214,15 +214,6 @@ public class User implements Serializable {
     * @generated
     */
     @OneToOne
-    @JoinColumn(name="fk_areaAtuacaoDelivery", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
-        
-        private AreaAtuacaoDelivery areaAtuacaoDelivery;
-
-
-    /**
-    * @generated
-    */
-    @OneToOne
     @JoinColumn(name="fk_empresaUsuario", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
         
         private EmpresaUsuario empresaUsuario;
@@ -584,24 +575,6 @@ public class User implements Serializable {
     */
     public User setAreaAtuacao(AreaAtuacao areaAtuacao) {
         this.areaAtuacao = areaAtuacao;
-        return this;
-    }
-    /**
-    * Obtém areaAtuacaoDelivery
-    * return areaAtuacaoDelivery
-    * @generated
-    */
-    public AreaAtuacaoDelivery getAreaAtuacaoDelivery() {
-        return this.areaAtuacaoDelivery;
-    }
-
-    /**
-    * Define areaAtuacaoDelivery
-    * @param areaAtuacaoDelivery areaAtuacaoDelivery
-    * @generated
-    */
-    public User setAreaAtuacaoDelivery(AreaAtuacaoDelivery areaAtuacaoDelivery) {
-        this.areaAtuacaoDelivery = areaAtuacaoDelivery;
         return this;
     }
     /**

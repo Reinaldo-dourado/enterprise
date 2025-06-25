@@ -50,6 +50,24 @@ public class AreaAtuacao implements Serializable {
 
 
     /**
+    * @generated
+    */
+    @CronappColumn(attributeType="BOOLEAN", label="Participa da Alocação?")
+    @Column(name = "IsparticipaAlocacaoTimeSheet", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.Boolean isparticipaAlocacaoTimeSheet;
+
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_areaAtuacao_0", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private AreaAtuacao areaAtuacao_0;
+
+
+    /**
     * Construtor
     * @generated
     */
@@ -90,6 +108,42 @@ public class AreaAtuacao implements Serializable {
     */
     public AreaAtuacao setNomeArea(java.lang.String nomeArea) {
         this.nomeArea = nomeArea;
+        return this;
+    }
+    /**
+    * Obtém isparticipaAlocacaoTimeSheet
+    * return isparticipaAlocacaoTimeSheet
+    * @generated
+    */
+    public java.lang.Boolean getIsparticipaAlocacaoTimeSheet() {
+        return this.isparticipaAlocacaoTimeSheet;
+    }
+
+    /**
+    * Define isparticipaAlocacaoTimeSheet
+    * @param isparticipaAlocacaoTimeSheet isparticipaAlocacaoTimeSheet
+    * @generated
+    */
+    public AreaAtuacao setIsparticipaAlocacaoTimeSheet(java.lang.Boolean isparticipaAlocacaoTimeSheet) {
+        this.isparticipaAlocacaoTimeSheet = isparticipaAlocacaoTimeSheet;
+        return this;
+    }
+    /**
+    * Obtém areaAtuacao_0
+    * return areaAtuacao_0
+    * @generated
+    */
+    public AreaAtuacao getAreaAtuacao_0() {
+        return this.areaAtuacao_0;
+    }
+
+    /**
+    * Define areaAtuacao_0
+    * @param areaAtuacao_0 areaAtuacao_0
+    * @generated
+    */
+    public AreaAtuacao setAreaAtuacao_0(AreaAtuacao areaAtuacao_0) {
+        this.areaAtuacao_0 = areaAtuacao_0;
         return this;
     }
 

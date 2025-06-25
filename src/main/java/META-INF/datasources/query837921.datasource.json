@@ -1,0 +1,365 @@
+{
+  "customId": "getOrdemServicoUser",
+  "queryName": "getOrdemServicoUser",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "AlocacaoOrdemServico",
+  "entityFullName": "app.entity.AlocacaoOrdemServico",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "AlocacaoOrdemServico",
+        "namespace": "app.entity.AlocacaoOrdemServico",
+        "dataSourceOptions": {
+          "id": "app.AlocacaoOrdemServico",
+          "customId": "AlocacaoOrdemServico",
+          "customQueryName": "app.AlocacaoOrdemServico",
+          "paramValues": [],
+          "entityFullName": "app.entity.AlocacaoOrdemServico",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "ordemDeServicos",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "user",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidadePrevista",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidadeEmDiasUteisPrazo",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataPrevistaEntrega",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "ordemDeServicos_descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "user_name",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "AlocacaoOrdemServico",
+          "fullName": "app.entity.AlocacaoOrdemServico",
+          "labelName": "app.entity.AlocacaoOrdemServico (AlocacaoOrdemServico)"
+        },
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [
+      {
+        "entity": "OrdemDeServicos",
+        "namespace": "app.entity.OrdemDeServicos",
+        "dataSourceOptions": {
+          "id": "app.OrdemDeServicos",
+          "customId": "OrdemDeServicos",
+          "customQueryName": "app.OrdemDeServicos",
+          "paramValues": [],
+          "entityFullName": "app.entity.OrdemDeServicos",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "projetos",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidade",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "projetos_name",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "OrdemDeServicos",
+          "fullName": "app.entity.OrdemDeServicos",
+          "labelName": "app.entity.OrdemDeServicos (OrdemDeServicos)"
+        },
+        "alias": "o",
+        "joinType": "join",
+        "joinField": "a.ordemDeServicos.id",
+        "joinOperator": "equal",
+        "joinTargetField": "o.id"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "a.user",
+          "field": "a.user",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":user",
+          "valueIsField": false
+        },
+        {
+          "id": "o.projetos",
+          "field": "o.projetos",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":projetos",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "user",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "GetUserNormalized",
+        "blocklyClass": "blockly.UserManager",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.UserManager",
+          "sourcePath": "src/main/java/blockly/UserManager.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "BeforeInsert",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "BeforeUpdate",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "BeforeDelete",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "GetUserNormalized",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "Normalize",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fieldName": "projetos",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "ordemDeServicos": null,
+    "user": null,
+    "quantidadePrevista": null,
+    "quantidadeEmDiasUteisPrazo": null,
+    "dataPrevistaEntrega": null,
+    "ordemDeServicos_descricao": null,
+    "user_name": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "ordemDeServicos": null,
+    "user": null,
+    "quantidadePrevista": null,
+    "quantidadeEmDiasUteisPrazo": null,
+    "dataPrevistaEntrega": null,
+    "ordemDeServicos_descricao": null,
+    "user_name": null
+  },
+  "security": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "ordemDeServicos": null,
+    "user": null,
+    "quantidadePrevista": null,
+    "quantidadeEmDiasUteisPrazo": null,
+    "dataPrevistaEntrega": null,
+    "ordemDeServicos_descricao": null,
+    "user_name": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query837921/",
+  "audit": false,
+  "swagger": false
+}

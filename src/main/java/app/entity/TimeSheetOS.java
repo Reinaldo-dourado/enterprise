@@ -99,6 +99,33 @@ public class TimeSheetOS implements Serializable {
 
 
     /**
+    * @generated
+    */
+    @CronappColumn(attributeType="STRING", label="Deslocamento Origem")
+    @Column(name = "deslocamentoOrigem", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String deslocamentoOrigem;
+
+
+    /**
+    * @generated
+    */
+    @CronappColumn(attributeType="STRING", label="Deslocamento Destino")
+    @Column(name = "deslocamentoDestino", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.String deslocamentoDestino;
+
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="fk_alocacaoOrdemServico", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+        
+        private AlocacaoOrdemServico alocacaoOrdemServico;
+
+
+    /**
     * Construtor
     * @generated
     */
@@ -229,6 +256,60 @@ public class TimeSheetOS implements Serializable {
     */
     public TimeSheetOS setDescricaoAtividade(java.lang.String descricaoAtividade) {
         this.descricaoAtividade = descricaoAtividade;
+        return this;
+    }
+    /**
+    * Obtém deslocamentoOrigem
+    * return deslocamentoOrigem
+    * @generated
+    */
+    public java.lang.String getDeslocamentoOrigem() {
+        return this.deslocamentoOrigem;
+    }
+
+    /**
+    * Define deslocamentoOrigem
+    * @param deslocamentoOrigem deslocamentoOrigem
+    * @generated
+    */
+    public TimeSheetOS setDeslocamentoOrigem(java.lang.String deslocamentoOrigem) {
+        this.deslocamentoOrigem = deslocamentoOrigem;
+        return this;
+    }
+    /**
+    * Obtém deslocamentoDestino
+    * return deslocamentoDestino
+    * @generated
+    */
+    public java.lang.String getDeslocamentoDestino() {
+        return this.deslocamentoDestino;
+    }
+
+    /**
+    * Define deslocamentoDestino
+    * @param deslocamentoDestino deslocamentoDestino
+    * @generated
+    */
+    public TimeSheetOS setDeslocamentoDestino(java.lang.String deslocamentoDestino) {
+        this.deslocamentoDestino = deslocamentoDestino;
+        return this;
+    }
+    /**
+    * Obtém alocacaoOrdemServico
+    * return alocacaoOrdemServico
+    * @generated
+    */
+    public AlocacaoOrdemServico getAlocacaoOrdemServico() {
+        return this.alocacaoOrdemServico;
+    }
+
+    /**
+    * Define alocacaoOrdemServico
+    * @param alocacaoOrdemServico alocacaoOrdemServico
+    * @generated
+    */
+    public TimeSheetOS setAlocacaoOrdemServico(AlocacaoOrdemServico alocacaoOrdemServico) {
+        this.alocacaoOrdemServico = alocacaoOrdemServico;
         return this;
     }
 
