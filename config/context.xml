@@ -3,4 +3,5 @@
     <Resource accessToUnderlyingConnectionAllowed="true" driverClassName="org.h2.Driver" logAbandoned="true" name="jdbc/main" password="root" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:h2:file:~/data;AUTO_SERVER=TRUE;MODE=LEGACY" username="root"/>
     <Profile value="DEV"/>
     <Profile value="PROD"/>
+    <Resource accessToUnderlyingConnectionAllowed="false" cloudDatabaseKey="" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" name="jdbc/TimeSheet" password="tayta2025" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" schema="" type="javax.sql.DataSource" url="jdbc:mysql://108.181.92.75:3306/timesheet_desenv?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" username="timesheet"/>
 </Context>
