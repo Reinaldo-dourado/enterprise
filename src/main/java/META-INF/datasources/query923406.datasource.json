@@ -1,11 +1,11 @@
 {
-  "customId": "GetProjetosByUser",
-  "queryName": "GetProjetosByUser",
+  "customId": "AlocacaoProjetosByUser",
+  "queryName": "AlocacaoProjetosByUser",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "Projetos",
-  "entityFullName": "app.entity.Projetos",
+  "entitySimpleName": "AlocacaoOrdemServico",
+  "entityFullName": "app.entity.AlocacaoOrdemServico",
   "query": {
     "isValid": true,
     "isEmpty": false,
@@ -14,176 +14,6 @@
     "namespace": "app",
     "type": "select",
     "rulesEntity": [
-      {
-        "entity": "Projetos",
-        "namespace": "app.entity.Projetos",
-        "dataSourceOptions": {
-          "id": "app.Projetos",
-          "customId": "Projetos",
-          "customQueryName": "app.Projetos",
-          "paramValues": [],
-          "entityFullName": "app.entity.Projetos",
-          "schemaFields": [
-            {
-              "name": "id",
-              "type": "String",
-              "nullable": false,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "name",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "dataInicio",
-              "type": "DateTime",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "dataFim",
-              "type": "DateTime",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "contrato",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "contratoItens",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "_objectKey",
-              "type": "String",
-              "nullable": false,
-              "notEmpty": false,
-              "key": true
-            },
-            {
-              "name": "contrato_descricao",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "contratoItens_descricaoItem",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            }
-          ],
-          "type": "entity",
-          "hasError": false,
-          "customName": "Projetos",
-          "fullName": "app.entity.Projetos",
-          "labelName": "app.entity.Projetos (Projetos)"
-        },
-        "alias": "p"
-      }
-    ],
-    "rulesSelect": [
-      {
-        "func": "get",
-        "field": "p",
-        "type": "string"
-      }
-    ],
-    "rulesJoin": [
-      {
-        "entity": "OrdemDeServicos",
-        "namespace": "app.entity.OrdemDeServicos",
-        "dataSourceOptions": {
-          "id": "app.OrdemDeServicos",
-          "customId": "OrdemDeServicos",
-          "customQueryName": "app.OrdemDeServicos",
-          "paramValues": [],
-          "entityFullName": "app.entity.OrdemDeServicos",
-          "schemaFields": [
-            {
-              "name": "id",
-              "type": "String",
-              "nullable": false,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "descricao",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "dataInicial",
-              "type": "DateTime",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "dataFinal",
-              "type": "DateTime",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "projetos",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "quantidade",
-              "type": "Int32",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            },
-            {
-              "name": "_objectKey",
-              "type": "String",
-              "nullable": false,
-              "notEmpty": false,
-              "key": true
-            },
-            {
-              "name": "projetos_name",
-              "type": "String",
-              "nullable": true,
-              "notEmpty": false,
-              "key": false
-            }
-          ],
-          "type": "entity",
-          "hasError": false,
-          "customName": "OrdemDeServicos",
-          "fullName": "app.entity.OrdemDeServicos",
-          "labelName": "app.entity.OrdemDeServicos (OrdemDeServicos)"
-        },
-        "alias": "ord",
-        "joinType": "join",
-        "joinField": "p.id",
-        "joinOperator": "equal",
-        "joinTargetField": "ord.projetos.id"
-      },
       {
         "entity": "AlocacaoOrdemServico",
         "namespace": "app.entity.AlocacaoOrdemServico",
@@ -278,13 +108,27 @@
           "fullName": "app.entity.AlocacaoOrdemServico",
           "labelName": "app.entity.AlocacaoOrdemServico (AlocacaoOrdemServico)"
         },
-        "alias": "al",
-        "joinType": "join",
-        "joinField": "al.ordemDeServicos.id",
-        "joinOperator": "equal",
-        "joinTargetField": "ord.id"
+        "alias": "a"
       }
     ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.ordemDeServicos.projetos.name",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.ordemDeServicos.projetos.id",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
     "rulesGroupBy": [],
     "rulesHaving": [],
     "rulesOrderBy": [],
@@ -292,8 +136,8 @@
       "condition": "AND",
       "rules": [
         {
-          "id": "al.user",
-          "field": "al.user",
+          "id": "a.user",
+          "field": "a.user",
           "type": "string",
           "input": "text",
           "operator": "equal",
@@ -389,33 +233,45 @@
   },
   "defaultValues": {
     "id": null,
-    "name": null,
-    "dataInicio": null,
-    "dataFim": null,
-    "contrato": null,
-    "contratoItens": null,
-    "contrato_descricao": null,
-    "contratoItens_descricaoItem": null
+    "dataInicial": null,
+    "dataFinal": null,
+    "ordemDeServicos": null,
+    "ordemDeServicos_descricao": null,
+    "user": null,
+    "user_name": null,
+    "quantidadePrevista": null,
+    "quantidadeEmDiasUteisPrazo": null,
+    "dataPrevistaEntrega": null,
+    "ordemDeServicos_projetos_name": null,
+    "ordemDeServicos_projetos_id": null
   },
   "defaultValuesProperties": {
     "id": null,
-    "name": null,
-    "dataInicio": null,
-    "dataFim": null,
-    "contrato": null,
-    "contratoItens": null,
-    "contrato_descricao": null,
-    "contratoItens_descricaoItem": null
+    "dataInicial": null,
+    "dataFinal": null,
+    "ordemDeServicos": null,
+    "ordemDeServicos_descricao": null,
+    "user": null,
+    "user_name": null,
+    "quantidadePrevista": null,
+    "quantidadeEmDiasUteisPrazo": null,
+    "dataPrevistaEntrega": null,
+    "ordemDeServicos_projetos_name": null,
+    "ordemDeServicos_projetos_id": null
   },
   "security": {
     "id": null,
-    "name": null,
-    "dataInicio": null,
-    "dataFim": null,
-    "contrato": null,
-    "contratoItens": null,
-    "contrato_descricao": null,
-    "contratoItens_descricaoItem": null
+    "dataInicial": null,
+    "dataFinal": null,
+    "ordemDeServicos": null,
+    "ordemDeServicos_descricao": null,
+    "user": null,
+    "user_name": null,
+    "quantidadePrevista": null,
+    "quantidadeEmDiasUteisPrazo": null,
+    "dataPrevistaEntrega": null,
+    "ordemDeServicos_projetos_name": null,
+    "ordemDeServicos_projetos_id": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -425,7 +281,7 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query831500/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query923406/",
   "audit": false,
   "swagger": false
 }

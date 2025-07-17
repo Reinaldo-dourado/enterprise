@@ -118,6 +118,16 @@
       "condition": "OR",
       "rules": [
         {
+          "id": ":clienteId",
+          "field": ":clienteId",
+          "type": "string",
+          "input": "text",
+          "operator": "is_empty",
+          "valueType": "param",
+          "value": null,
+          "valueIsField": false
+        },
+        {
           "id": "c.cliente.id",
           "field": "c.cliente.id",
           "type": "string",

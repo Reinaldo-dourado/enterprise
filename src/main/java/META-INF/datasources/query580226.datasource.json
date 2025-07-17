@@ -1,0 +1,113 @@
+{
+  "customId": "TimeSheetOrdemServico",
+  "queryName": "TimeSheetOrdemServico",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "TimeSheetOS",
+  "entityFullName": "app.entity.TimeSheetOS",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "TimeSheetOS",
+        "alias": "t",
+        "namespace": "app.entity.TimeSheetOS"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "t"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "ordemDeServicos": null,
+    "dataInicial": null,
+    "horaInicial": null,
+    "dataFinal": null,
+    "horafinal": null,
+    "descricaoAtividade": null,
+    "deslocamentoOrigem": null,
+    "deslocamentoDestino": null,
+    "alocacaoOrdemServico": null,
+    "ordemDeServicos_descricao": null,
+    "alocacaoOrdemServico_dataInicial": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "ordemDeServicos": null,
+    "dataInicial": null,
+    "horaInicial": null,
+    "dataFinal": null,
+    "horafinal": null,
+    "descricaoAtividade": null,
+    "deslocamentoOrigem": null,
+    "deslocamentoDestino": null,
+    "alocacaoOrdemServico": null,
+    "ordemDeServicos_descricao": null,
+    "alocacaoOrdemServico_dataInicial": null
+  },
+  "security": {
+    "id": null,
+    "ordemDeServicos": null,
+    "dataInicial": null,
+    "horaInicial": null,
+    "dataFinal": null,
+    "horafinal": null,
+    "descricaoAtividade": null,
+    "deslocamentoOrigem": null,
+    "deslocamentoDestino": null,
+    "alocacaoOrdemServico": null,
+    "ordemDeServicos_descricao": null,
+    "alocacaoOrdemServico_dataInicial": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query580226/",
+  "audit": false,
+  "swagger": false
+}

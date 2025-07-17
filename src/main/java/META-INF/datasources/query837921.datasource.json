@@ -116,6 +116,11 @@
         "func": "get",
         "field": "a",
         "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.ordemDeServicos.id",
+        "type": "string"
       }
     ],
     "rulesJoin": [
@@ -320,36 +325,39 @@
     "dataInicial": null,
     "dataFinal": null,
     "ordemDeServicos": null,
+    "ordemDeServicos_descricao": null,
     "user": null,
+    "user_name": null,
     "quantidadePrevista": null,
     "quantidadeEmDiasUteisPrazo": null,
     "dataPrevistaEntrega": null,
-    "ordemDeServicos_descricao": null,
-    "user_name": null
+    "ordemDeServicos_id": null
   },
   "defaultValuesProperties": {
     "id": null,
     "dataInicial": null,
     "dataFinal": null,
     "ordemDeServicos": null,
+    "ordemDeServicos_descricao": null,
     "user": null,
+    "user_name": null,
     "quantidadePrevista": null,
     "quantidadeEmDiasUteisPrazo": null,
     "dataPrevistaEntrega": null,
-    "ordemDeServicos_descricao": null,
-    "user_name": null
+    "ordemDeServicos_id": null
   },
   "security": {
     "id": null,
     "dataInicial": null,
     "dataFinal": null,
     "ordemDeServicos": null,
+    "ordemDeServicos_descricao": null,
     "user": null,
+    "user_name": null,
     "quantidadePrevista": null,
     "quantidadeEmDiasUteisPrazo": null,
     "dataPrevistaEntrega": null,
-    "ordemDeServicos_descricao": null,
-    "user_name": null
+    "ordemDeServicos_id": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
