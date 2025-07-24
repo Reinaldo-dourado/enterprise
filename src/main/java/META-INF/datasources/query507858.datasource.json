@@ -1,6 +1,6 @@
 {
-  "customId": "GetOrdemDeServicoByProjetoid",
-  "queryName": "GetOrdemDeServicoByProjetoid",
+  "customId": "GetOrdemServico",
+  "queryName": "GetOrdemServico",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
@@ -60,6 +60,13 @@
               "key": false
             },
             {
+              "name": "quantidade",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
               "name": "_objectKey",
               "type": "String",
               "nullable": false,
@@ -103,7 +110,7 @@
           "type": "string",
           "input": "text",
           "operator": "equal",
-          "valueType": "custom",
+          "valueType": "param",
           "value": "Todos",
           "valueIsField": false
         },
@@ -163,7 +170,8 @@
     "dataInicial": null,
     "dataFinal": null,
     "projetos": null,
-    "quantidade": null
+    "quantidade": null,
+    "projetos_name": null
   },
   "defaultValuesProperties": {
     "id": null,
@@ -171,7 +179,8 @@
     "dataInicial": null,
     "dataFinal": null,
     "projetos": null,
-    "quantidade": null
+    "quantidade": null,
+    "projetos_name": null
   },
   "security": {
     "id": null,
@@ -179,7 +188,8 @@
     "dataInicial": null,
     "dataFinal": null,
     "projetos": null,
-    "quantidade": null
+    "quantidade": null,
+    "projetos_name": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -189,7 +199,7 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query845712/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query507858/",
   "audit": false,
   "swagger": false
 }

@@ -1,0 +1,296 @@
+{
+  "customId": "GetTimeSheetByUser",
+  "queryName": "GetTimeSheetByUser",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "TimeSheetOS",
+  "entityFullName": "app.entity.TimeSheetOS",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "TimeSheetOS",
+        "namespace": "app.entity.TimeSheetOS",
+        "dataSourceOptions": {
+          "id": "app.TimeSheetOS",
+          "customId": "TimeSheetOS",
+          "customQueryName": "app.TimeSheetOS",
+          "paramValues": [],
+          "entityFullName": "app.entity.TimeSheetOS",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "ordemDeServicos",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "horaInicial",
+              "type": "Time",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "horafinal",
+              "type": "Time",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "descricaoAtividade",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "deslocamentoOrigem",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "deslocamentoDestino",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "alocacaoOrdemServico",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "ordemDeServicos_descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "alocacaoOrdemServico_dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "TimeSheetOS",
+          "fullName": "app.entity.TimeSheetOS",
+          "labelName": "app.entity.TimeSheetOS (TimeSheetOS)"
+        },
+        "alias": "t"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "t",
+        "type": "datetime"
+      },
+      {
+        "func": "get",
+        "field": "t.alocacaoOrdemServico.ordemDeServicos.projetos.id",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "t.dataInicial",
+        "order": "asc"
+      }
+    ],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "t.alocacaoOrdemServico.user.id",
+          "field": "t.alocacaoOrdemServico.user.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "valueType": "param",
+          "value": ":UserId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "UserId",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "GetUserNormalized",
+        "blocklyClass": "blockly.UserManager",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.UserManager",
+          "sourcePath": "src/main/java/blockly/UserManager.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "BeforeInsert",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "BeforeUpdate",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "BeforeDelete",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "GetUserNormalized",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "Normalize",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "dataInicial": null,
+    "horaInicial": null,
+    "horafinal": null,
+    "descricaoAtividade": null,
+    "deslocamentoOrigem": null,
+    "deslocamentoDestino": null,
+    "alocacaoOrdemServico": null,
+    "alocacaoOrdemServico_dataInicial": null,
+    "alocacaoOrdemServico_ordemDeServicos_projetos_id": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "dataInicial": null,
+    "horaInicial": null,
+    "horafinal": null,
+    "descricaoAtividade": null,
+    "deslocamentoOrigem": null,
+    "deslocamentoDestino": null,
+    "alocacaoOrdemServico": null,
+    "alocacaoOrdemServico_dataInicial": null,
+    "alocacaoOrdemServico_ordemDeServicos_projetos_id": null
+  },
+  "security": {
+    "id": null,
+    "dataInicial": null,
+    "horaInicial": null,
+    "horafinal": null,
+    "descricaoAtividade": null,
+    "deslocamentoOrigem": null,
+    "deslocamentoDestino": null,
+    "alocacaoOrdemServico": null,
+    "alocacaoOrdemServico_dataInicial": null,
+    "alocacaoOrdemServico_ordemDeServicos_projetos_id": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query339123/",
+  "audit": false,
+  "swagger": false
+}

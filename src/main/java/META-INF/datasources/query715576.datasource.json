@@ -1,5 +1,5 @@
 {
-  "customId": "query715576",
+  "customId": "ContratoCliente",
   "queryName": "ContratoCliente",
   "sourceType": "entityFullName",
   "baseEntity": null,
@@ -122,9 +122,9 @@
           "field": ":clienteId",
           "type": "string",
           "input": "text",
-          "operator": "is_empty",
+          "operator": "equal",
           "valueType": "param",
-          "value": null,
+          "value": "Todos",
           "valueIsField": false
         },
         {

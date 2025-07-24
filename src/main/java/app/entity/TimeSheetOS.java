@@ -43,15 +43,6 @@ public class TimeSheetOS implements Serializable {
     /**
     * @generated
     */
-    @ManyToOne
-    @JoinColumn(name="fk_ordemDeServicos", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
-        
-        private OrdemDeServicos ordemDeServicos;
-
-
-    /**
-    * @generated
-    */
     @Temporal(TemporalType.DATE)
     @CronappColumn(attributeType="DATE", label="Data Inicial")
     @Column(name = "dataInicial", nullable = true, unique = false, insertable=true, updatable=true)
@@ -67,16 +58,6 @@ public class TimeSheetOS implements Serializable {
     @Column(name = "horaInicial", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.util.Date horaInicial;
-
-
-    /**
-    * @generated
-    */
-    @Temporal(TemporalType.DATE)
-    @CronappColumn(attributeType="DATE", label="Data Final")
-    @Column(name = "dataFinal", nullable = true, unique = false, insertable=true, updatable=true)
-        
-        private java.util.Date dataFinal;
 
 
     /**
@@ -151,24 +132,6 @@ public class TimeSheetOS implements Serializable {
         return this;
     }
     /**
-    * Obtém ordemDeServicos
-    * return ordemDeServicos
-    * @generated
-    */
-    public OrdemDeServicos getOrdemDeServicos() {
-        return this.ordemDeServicos;
-    }
-
-    /**
-    * Define ordemDeServicos
-    * @param ordemDeServicos ordemDeServicos
-    * @generated
-    */
-    public TimeSheetOS setOrdemDeServicos(OrdemDeServicos ordemDeServicos) {
-        this.ordemDeServicos = ordemDeServicos;
-        return this;
-    }
-    /**
     * Obtém dataInicial
     * return dataInicial
     * @generated
@@ -202,24 +165,6 @@ public class TimeSheetOS implements Serializable {
     */
     public TimeSheetOS setHoraInicial(java.util.Date horaInicial) {
         this.horaInicial = horaInicial;
-        return this;
-    }
-    /**
-    * Obtém dataFinal
-    * return dataFinal
-    * @generated
-    */
-    public java.util.Date getDataFinal() {
-        return this.dataFinal;
-    }
-
-    /**
-    * Define dataFinal
-    * @param dataFinal dataFinal
-    * @generated
-    */
-    public TimeSheetOS setDataFinal(java.util.Date dataFinal) {
-        this.dataFinal = dataFinal;
         return this;
     }
     /**

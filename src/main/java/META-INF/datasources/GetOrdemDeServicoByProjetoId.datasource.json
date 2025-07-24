@@ -1,6 +1,6 @@
 {
-  "customId": "GetOrdemDeServicoByProjetoid",
-  "queryName": "GetOrdemDeServicoByProjetoid",
+  "customId": "GetOrdemDeServicoByProjetoId",
+  "queryName": "GetOrdemDeServicoByProjetoId",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
@@ -191,5 +191,7 @@
   },
   "serviceUrl": "api/cronapi/odata/v2/app/query845712/",
   "audit": false,
-  "swagger": false
+  "swagger": false,
+  "folder": "",
+  "generated": false
 }

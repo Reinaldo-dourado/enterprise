@@ -5102,10 +5102,8 @@
       "angle": 0,
       "attributes": [
         "id:java.lang.String",
-        "ordemDeServicos:OrdemDeServicos",
         "dataInicial:java.util.Date",
         "horaInicial:java.sql.Time",
-        "dataFinal:java.util.Date",
         "horafinal:java.sql.Time",
         "DescricaoAtividade:java.lang.String",
         "deslocamentoOrigem:java.lang.String",
@@ -5116,26 +5114,26 @@
         ".uml-class-attrs-rect": {
           "fill": "#F0F0F0",
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
-          "height": 220,
+          "height": 180,
           "stroke": "#C2C2C2",
           "transform": "translate(0,40)"
         },
         ".uml-class-attrs-text": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "text": "* id\nordemDeServicos\ndataInicial\nhoraInicial\ndataFinal\nhorafinal\nDescricaoAtividade\ndeslocamentoOrigem\ndeslocamentoDestino\nalocacaoOrdemServico\n"
+          "text": "* id\ndataInicial\nhoraInicial\nhorafinal\nDescricaoAtividade\ndeslocamentoOrigem\ndeslocamentoDestino\nalocacaoOrdemServico\n"
         },
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "text": "Texto\nOrdemDeServicos\nData\nHora\nData\nHora\nTexto\nTexto\nTexto\nAlocacaoOrdemServico\n"
+          "text": "Texto\nData\nHora\nHora\nTexto\nTexto\nTexto\nAlocacaoOrdemServico\n"
         },
         ".uml-class-methods-rect": {
           "fill": "#F0F0F0",
           "height": 20,
           "stroke": "#C2C2C2",
           "stroke-width": 1,
-          "transform": "translate(0,260)"
+          "transform": "translate(0,220)"
         },
         ".uml-class-methods-text": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
@@ -5171,44 +5169,6 @@
           "isNullable": false,
           "isNotEmpty": false,
           "pkType": "UUID",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "passwordPolicy": "none",
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": "",
-          "joins": "",
-          "isIndex": false,
-          "useOuterJoin": false,
-          "regionAWS": "",
-          "columnDefinition": ""
-        },
-        {
-          "name": "ordemDeServicos",
-          "type": "OrdemDeServicos",
-          "dbName": "fk_ordemDeServicos",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Ordem De Servicos",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "isNotEmpty": false,
-          "pkType": "",
           "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
@@ -5279,44 +5239,6 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Hora Inicial",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "isNotEmpty": false,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "passwordPolicy": "none",
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": "",
-          "joins": "",
-          "isIndex": false,
-          "useOuterJoin": false,
-          "regionAWS": "",
-          "columnDefinition": ""
-        },
-        {
-          "name": "dataFinal",
-          "type": "java.util.Date",
-          "dbName": "dataFinal",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Data Final",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -5502,14 +5424,18 @@
           "name": "alocacaoOrdemServico",
           "type": "AlocacaoOrdemServico",
           "dbName": "fk_alocacaoOrdemServico",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
           "label": "Alocacao Ordem Servico",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
           "isNotEmpty": false,
-          "multitenantContext": "",
           "pkType": "",
+          "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
           "isInsertable": true,
@@ -5518,10 +5444,19 @@
           "passwordPolicy": "none",
           "referencedColumnName": "",
           "isSearchable": false,
+          "sequence": "",
           "isCascade": false,
           "isVersion": false,
-          "idIndex": false,
-          "useOuterJoin": false
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": "",
+          "columnDefinition": ""
         }
       ],
       "generateView": "Auto",
@@ -5540,7 +5475,7 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 200,
+        "height": 180,
         "width": 273
       },
       "swagger": false,
@@ -9787,51 +9722,6 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 28
-    },
-    {
-      "associationType": "Association",
-      "attrs": {
-        ".marker-source": {
-          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
-          "fill": "#cecece"
-        },
-        ".marker-target": {
-          "d": "",
-          "fill": ""
-        }
-      },
-      "id": "feb1083e-d989-4b93-b788-35564b5d3571",
-      "labels": [
-        {
-          "position": 0.9,
-          "attrs": {
-            "rect": {
-              "fill": "transparent"
-            },
-            "text": {
-              "text": "*",
-              "font-family": "Arial",
-              "font-size": "12px",
-              "fill": "#cecece"
-            }
-          }
-        }
-      ],
-      "name": null,
-      "queries": [],
-      "relationFields": [
-        "ordemDeServicos:target"
-      ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
-      "source": {
-        "id": "c86e8b13-356c-4087-b0b2-878ba01dc047"
-      },
-      "target": {
-        "id": "2fb83119-536d-4e43-8bed-137d0e5305c8"
-      },
-      "type": "uml.Composition",
-      "vertices": [],
-      "z": 41
     }
   ],
   "selectedGroup": "7c089de0-bdaf-408c-bcec-ed68890dcfdb",
@@ -9864,10 +9754,10 @@
       ],
       "groupPositions": [
         {
-          "idCell": "e24e8b7d-487e-4574-b853-84d1ebb806dd",
+          "idCell": "18ef25f9-fa5e-47dc-b0b6-7685ee73b50d",
           "position": {
-            "x": -22,
-            "y": 800
+            "x": 1258,
+            "y": 490
           }
         },
         {
@@ -9878,55 +9768,6 @@
           }
         },
         {
-          "idCell": "da61c447-45a8-4579-a340-4a33566ca655",
-          "position": {
-            "x": 194,
-            "y": 34
-          }
-        },
-        {
-          "idCell": "4723864b-41c1-48a6-86d1-5411c8d89b80",
-          "position": {
-            "x": 104,
-            "y": 292
-          }
-        },
-        {
-          "idCell": "0a99ee82-7178-4250-8e7d-b097124b22e3",
-          "position": {
-            "x": 238,
-            "y": 800
-          }
-        },
-        {
-          "idCell": "006a8712-ae72-4457-9a08-bcc6a5c9688b",
-          "position": {
-            "x": 76,
-            "y": 498
-          }
-        },
-        {
-          "idCell": "18ef25f9-fa5e-47dc-b0b6-7685ee73b50d",
-          "position": {
-            "x": 1258,
-            "y": 490
-          }
-        },
-        {
-          "idCell": "80e352bf-5617-4406-98f7-6ffb0739d65d",
-          "position": {
-            "x": 498,
-            "y": 36
-          }
-        },
-        {
-          "idCell": "2fb83119-536d-4e43-8bed-137d0e5305c8",
-          "position": {
-            "x": 900,
-            "y": 1110
-          }
-        },
-        {
           "idCell": "01fe717e-0f6f-4bcd-a9bb-833b3a9b2497",
           "position": {
             "x": 528,
@@ -9934,24 +9775,10 @@
           }
         },
         {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "idCell": "4723864b-41c1-48a6-86d1-5411c8d89b80",
           "position": {
-            "x": 514,
-            "y": 270
-          }
-        },
-        {
-          "idCell": "a6da38b0-1ab2-4506-bb15-222a752717f4",
-          "position": {
-            "x": 1564,
-            "y": 126
-          }
-        },
-        {
-          "idCell": "823ef0c6-5c0a-4989-86c5-de65e3396681",
-          "position": {
-            "x": 1332,
-            "y": 496
+            "x": 104,
+            "y": 292
           }
         },
         {
@@ -9969,10 +9796,38 @@
           }
         },
         {
-          "idCell": "21dd69ad-1a7e-4282-93ad-a3b31dad9086",
+          "idCell": "2fb83119-536d-4e43-8bed-137d0e5305c8",
           "position": {
-            "x": 872,
-            "y": -122
+            "x": 900,
+            "y": 1110
+          }
+        },
+        {
+          "idCell": "0a99ee82-7178-4250-8e7d-b097124b22e3",
+          "position": {
+            "x": 238,
+            "y": 800
+          }
+        },
+        {
+          "idCell": "a6da38b0-1ab2-4506-bb15-222a752717f4",
+          "position": {
+            "x": 1564,
+            "y": 126
+          }
+        },
+        {
+          "idCell": "823ef0c6-5c0a-4989-86c5-de65e3396681",
+          "position": {
+            "x": 1332,
+            "y": 496
+          }
+        },
+        {
+          "idCell": "80e352bf-5617-4406-98f7-6ffb0739d65d",
+          "position": {
+            "x": 498,
+            "y": 36
           }
         },
         {
@@ -9980,6 +9835,41 @@
           "position": {
             "x": 836,
             "y": 454
+          }
+        },
+        {
+          "idCell": "006a8712-ae72-4457-9a08-bcc6a5c9688b",
+          "position": {
+            "x": 76,
+            "y": 498
+          }
+        },
+        {
+          "idCell": "da61c447-45a8-4579-a340-4a33566ca655",
+          "position": {
+            "x": 194,
+            "y": 34
+          }
+        },
+        {
+          "idCell": "e24e8b7d-487e-4574-b853-84d1ebb806dd",
+          "position": {
+            "x": -22,
+            "y": 800
+          }
+        },
+        {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 514,
+            "y": 270
+          }
+        },
+        {
+          "idCell": "21dd69ad-1a7e-4282-93ad-a3b31dad9086",
+          "position": {
+            "x": 872,
+            "y": -122
           }
         }
       ]
@@ -10017,38 +9907,17 @@
       ],
       "groupPositions": [
         {
-          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
           "position": {
-            "x": 70,
-            "y": 240
+            "x": 144,
+            "y": 530
           }
         },
         {
-          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
           "position": {
-            "x": 404,
-            "y": 342
-          }
-        },
-        {
-          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
-          "position": {
-            "x": 100,
-            "y": 34
-          }
-        },
-        {
-          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
-          "position": {
-            "x": 1106,
-            "y": 406
-          }
-        },
-        {
-          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
-          "position": {
-            "x": 656,
-            "y": 312
+            "x": 684,
+            "y": 26
           }
         },
         {
@@ -10059,24 +9928,24 @@
           }
         },
         {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
-          "position": {
-            "x": 940,
-            "y": 594
-          }
-        },
-        {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
-          "position": {
-            "x": 144,
-            "y": 530
-          }
-        },
-        {
           "idCell": "fabe0aea-c05d-44a4-a87c-2e2c0a97e994",
           "position": {
             "x": 382,
             "y": 36
+          }
+        },
+        {
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "position": {
+            "x": 1106,
+            "y": 406
+          }
+        },
+        {
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "position": {
+            "x": 940,
+            "y": 594
           }
         },
         {
@@ -10094,10 +9963,31 @@
           }
         },
         {
-          "idCell": "2016ad54-a0f9-4337-ad10-694a48f0435c",
+          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
           "position": {
-            "x": 684,
-            "y": 26
+            "x": 100,
+            "y": 34
+          }
+        },
+        {
+          "idCell": "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
+          "position": {
+            "x": 656,
+            "y": 312
+          }
+        },
+        {
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "position": {
+            "x": 70,
+            "y": 240
+          }
+        },
+        {
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
+          "position": {
+            "x": 404,
+            "y": 342
           }
         }
       ]
