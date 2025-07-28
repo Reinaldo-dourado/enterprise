@@ -219,16 +219,6 @@
           "valueType": "param",
           "value": ":user",
           "valueIsField": false
-        },
-        {
-          "id": "o.projetos",
-          "field": "o.projetos",
-          "type": "string",
-          "input": "text",
-          "operator": "equal",
-          "valueType": "param",
-          "value": ":projetos",
-          "valueIsField": false
         }
       ],
       "not": false,
@@ -289,10 +279,6 @@
           ]
         }
       }
-    },
-    {
-      "fieldName": "projetos",
-      "fieldValue": ""
     }
   ],
   "verbs": {

@@ -1,0 +1,297 @@
+{
+  "customId": "BuscarOSByAlocacaoUser",
+  "queryName": "BuscarOSByAlocacaoUser",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "OrdemDeServicos",
+  "entityFullName": "app.entity.OrdemDeServicos",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "OrdemDeServicos",
+        "namespace": "app.entity.OrdemDeServicos",
+        "dataSourceOptions": {
+          "id": "app.OrdemDeServicos",
+          "customId": "OrdemDeServicos",
+          "customQueryName": "app.OrdemDeServicos",
+          "paramValues": [],
+          "entityFullName": "app.entity.OrdemDeServicos",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "projetos",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidade",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "projetos_name",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "OrdemDeServicos",
+          "fullName": "app.entity.OrdemDeServicos",
+          "labelName": "app.entity.OrdemDeServicos (OrdemDeServicos)"
+        },
+        "alias": "o"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "o.id",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "o.descricao",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "o.projetos",
+        "type": "string"
+      }
+    ],
+    "rulesJoin": [
+      {
+        "entity": "AlocacaoOrdemServico",
+        "namespace": "app.entity.AlocacaoOrdemServico",
+        "dataSourceOptions": {
+          "id": "app.AlocacaoOrdemServico",
+          "customId": "AlocacaoOrdemServico",
+          "customQueryName": "app.AlocacaoOrdemServico",
+          "paramValues": [],
+          "entityFullName": "app.entity.AlocacaoOrdemServico",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "ordemDeServicos",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "user",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidadePrevista",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidadeEmDiasUteisPrazo",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataPrevistaEntrega",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "ordemDeServicos_descricao",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "user_name",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "AlocacaoOrdemServico",
+          "fullName": "app.entity.AlocacaoOrdemServico",
+          "labelName": "app.entity.AlocacaoOrdemServico (AlocacaoOrdemServico)"
+        },
+        "alias": "a",
+        "joinType": "join",
+        "joinField": "a.ordemDeServicos.id",
+        "joinOperator": "equal",
+        "joinTargetField": "o.id"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "a.user.id",
+          "field": "a.user.id",
+          "type": "string",
+          "input": "text",
+          "operator": "contains",
+          "valueType": "param",
+          "value": ":userId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "userId",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "descricao": null,
+    "projetos": null,
+    "projetos_name": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "descricao": null,
+    "projetos": null,
+    "projetos_name": null
+  },
+  "security": {
+    "id": null,
+    "descricao": null,
+    "projetos": null,
+    "projetos_name": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query588013/",
+  "audit": false,
+  "swagger": false
+}
